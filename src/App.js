@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import {Basic1, Basic2} from './element-types/Basic'
+import {Memo1, Memo2} from './element-types/Memo'
+import {Ff} from './element-types/ForwardRef';
+
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
