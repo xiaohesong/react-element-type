@@ -1,9 +1,9 @@
 import React from 'react';
-import {Memo2} from './Memo'
+import {Memo1} from './Memo'
 
 const Ff = React.forwardRef((props, ref) => {
   return (
-    Memo2
+    Memo1
   )
 })
 
@@ -13,7 +13,7 @@ export {
   Ff
 }
 
-console.log(f)
+console.log('f is', f)
 // $$typeof: Symbol(react.element)
 // type:
 //  $$typeof: Symbol(react.forward_ref)

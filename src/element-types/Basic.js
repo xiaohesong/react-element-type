@@ -27,7 +27,7 @@ const basic2 = <Basic2 />
 const basic3 = <Basic3 />
 
 // 下面三个输出结果都是 Symbol(react.element)
-console.log('basic1 is', basic1.$$typeof, 'basic2 is', basic2.$$typeof, 'basic3 is', basic3.$$typeof)
+console.log('basic1 is', basic1, basic1.$$typeof, 'basic2 is', basic2.$$typeof, 'basic3 is', basic3.$$typeof)
 
 export {
   Basic1,
