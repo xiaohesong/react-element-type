@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { UserInfo } from './deps/UserInfo'
 export const ContextExample = React.createContext({name: 'xiaohesong'});
 
-class ContextDemo1 extends Component {
+class ContextDemo extends Component {
   render() {
     return(
       <ContextExample.Provider value='youzan'>
@@ -12,7 +12,7 @@ class ContextDemo1 extends Component {
   }
 }
 
-const contextDemo1 = <ContextDemo1 />
+const contextDemo1 = <ContextDemo />
 const contextDemo2 = <ContextExample.Provider value='youzan'>
   <UserInfo />
 </ContextExample.Provider>
@@ -53,6 +53,4 @@ console.log(
 );
 
 
-export {
-ContextDemo1
-}
+export default ContextDemo

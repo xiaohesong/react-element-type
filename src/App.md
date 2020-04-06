@@ -49,3 +49,5 @@ export function typeOf(object: any) {
 // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
 // (unstable) APIs that have been removed. Can we remove the symbols?
 ```
+
+说了那么多，就是不想实现上面两个的类型 :smile:

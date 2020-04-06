@@ -1,19 +1,17 @@
 import React from 'react';
-import {Memo1} from './Memo'
+import Memo from './Memo'
 
-const Ff = React.forwardRef((props, ref) => {
+const ForwardRef = React.forwardRef((props, ref) => {
   return (
-    Memo1
+    <Memo />
   )
 })
 
-const f = <Ff />
+const forwardRef = <ForwardRef />
 
-export {
-  Ff
-}
+export default ForwardRef
 
-console.log('f is', f)
+console.log('forwardRef is', forwardRef)
 // $$typeof: Symbol(react.element)
 // type:
 //  $$typeof: Symbol(react.forward_ref)
@@ -30,5 +28,5 @@ console.log('f is', f)
 // ref: null
 // props: {}
 
-console.log(f.type.$$typeof)
+// console.log(forwardRef.type.$$typeof)
 // Symbol(react.forward_ref)

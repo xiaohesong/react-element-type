@@ -1,7 +1,7 @@
 import React from 'react';
 
-class StrictModel1 extends React.Component  {
-  rende() {
+class StrictModel extends React.Component  {
+  render() {
     return(
       <div>
         Hi, I'a a strict render model
@@ -15,7 +15,7 @@ const StrictModel2 = () => {
   return <span>无情{state}</span>
 }
 
-const strictModel1 = <React.StrictMode><StrictModel1/></React.StrictMode>
+const strictModel1 = <React.StrictMode><StrictModel/></React.StrictMode>
 const strictModel2 = <React.StrictModel><StrictModel2/></React.StrictModel>
 
 console.log(
@@ -49,6 +49,4 @@ console.log(
 // 注意：这个只针对class component进行strict model处理，其他的(函数及hooks，元素)都不行
 // 不确定是否是一个bug
 
-export {
-  StrictModel1
-}
+export default StrictModel

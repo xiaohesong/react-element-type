@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Memo1 = React.memo(() => {
+const Memo = React.memo(() => {
   return(
     <div>memo2 for func style</div>
   )
 })
 
-const memo1 = <Memo1 />
+const memo1 = <Memo />
 
 console.log('memo1 is', memo1)
 // $$typeof: Symbol(react.element)
@@ -31,6 +31,4 @@ console.log(
   // $$typeof: Symbol(react.memo)
 )
 
-export {
-  Memo1
-}
+export default Memo

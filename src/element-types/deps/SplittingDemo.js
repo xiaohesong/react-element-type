@@ -6,6 +6,4 @@ class SplitingComponent extends Component {
   }
 }
 
-export {
-  SplitingComponent
-}
+export default SplitingComponent

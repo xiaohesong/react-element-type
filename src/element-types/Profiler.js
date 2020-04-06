@@ -21,6 +21,4 @@ console.log(
 );
 
 
-export {
-  Profiler
-}
+export default Profiler

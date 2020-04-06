@@ -35,6 +35,4 @@ console.log(
 );
 
 
-export {
-  Portal
-}
+export default Portal

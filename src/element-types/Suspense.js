@@ -5,7 +5,7 @@ import React, { Component, Suspense, lazy } from 'react';
 const Splited = lazy(() => import('./deps/SplittingDemo'))
 
 
-class SuspneseDemo1 extends Component {
+class SuspenseDemo extends Component {
   render() {
     return(
       <Suspense fallback={<div>loading...</div>}>
@@ -15,7 +15,7 @@ class SuspneseDemo1 extends Component {
   }
 }
 
-const suspense1 = <Suspense><SuspneseDemo1 /></Suspense>
+const suspense1 = <Suspense><SuspenseDemo /></Suspense>
 const suspense2 = <Splited />
 
 console.log(
@@ -46,6 +46,4 @@ console.log(
   // __proto__: Object
 )
 
-export {
-  SuspneseDemo1
-}
+export default SuspenseDemo
