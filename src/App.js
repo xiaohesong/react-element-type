@@ -45,7 +45,7 @@ function App() {
   }
 
   const tValue = JSON.parse(valueT)
-  tValue.$$typeof = Symbol.for('react.element')
+  // tValue.$$typeof = Symbol.for('react.element')
   return (
     <div className="App" id='app'>
       <select value={renderer} onChange={handleChange}>
