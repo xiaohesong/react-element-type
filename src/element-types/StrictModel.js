@@ -19,7 +19,7 @@ const strictModel1 = <React.StrictMode><StrictModel/></React.StrictMode>
 const strictModel2 = <React.StrictModel><StrictModel2/></React.StrictModel>
 
 console.log(
-  'strict model1 is(strict model)',
+  'strict model: ',
   strictModel1,
   // $$typeof: Symbol(react.element)
   // type: Symbol(react.strict_mode)
@@ -32,8 +32,8 @@ console.log(
   // _source: {fileName: "/Users/xiaohesong/workspace/react/example/react-element-type/src/element-types/StrictModel.js", lineNumber: 18}
   // __proto__: Object
 
-  '\nstrict model2 is(normal)',
-  strictModel2
+  // '\nstrict model2 is(normal)',
+  // strictModel2
   // $$typeof: Symbol(react.element)
   // type: undefined
   // key: null

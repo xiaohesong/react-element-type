@@ -23,9 +23,9 @@ const contextDemo3 = <ContextExample.Consumer>
 </ContextExample.Consumer>
 
 console.log(
-  'contextDemo1 is(normal)',
-  contextDemo1,
-  '\ncontextDemo2 is(provider)',
+  // 'contextDemo1 is(normal)',
+  // contextDemo1,
+  '\ncontext(provider): ',
   contextDemo2,
   // $$typeof: Symbol(react.element)
   // type: {$$typeof: Symbol(react.provider), _context: {…}}
@@ -37,7 +37,7 @@ console.log(
   // _self: null
   // _source: {fileName: "/Users/xiaohesong/workspace/react/example/react-element-type/src/element-types/Context.js", lineNumber: 15}
   // __proto__: Object
-  '\ncontextDemo3 is(context)',
+  '\ncontext(context): ',
   contextDemo3
   // $$typeof: Symbol(react.element)
   // type: {$$typeof: Symbol(react.context), _context: {…}, _calculateChangedBits: null, …}

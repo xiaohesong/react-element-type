@@ -22,9 +22,9 @@ const portal2 = ReactDOM.createPortal(
 )
 
 console.log(
-  'portal1 is(normal)',
-  portal1,
-  '\nportal2 is(portal)',
+  // 'portal1 is(normal)',
+  // portal1,
+  '\nportal: ',
   portal2
   // $$typeof: Symbol(react.portal)
   // key: null

@@ -1,17 +1,18 @@
 import React from 'react';
-import Memo from './Memo'
 
-const ForwardRef = React.forwardRef((props, ref) => {
-  return (
-    <Memo />
+const Memo = React.memo(() => {
+  return(
+    <div>memo2 for func style</div>
   )
 })
+
+const ForwardRef = React.forwardRef((props, ref) => <Memo />)
 
 const forwardRef = <ForwardRef />
 
 export default ForwardRef
 
-console.log('forwardRef is', forwardRef)
+console.log('forwardRef: ', forwardRef)
 // $$typeof: Symbol(react.element)
 // type:
 //  $$typeof: Symbol(react.forward_ref)

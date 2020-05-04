@@ -7,7 +7,6 @@ class UserInfo extends React.Component {
       <ContextExample.Consumer>
         {
           value => {
-            console.log('user info value is', value)
             return <span>Hi, my name is {value}</span>
           }
         }
@@ -19,8 +18,8 @@ class UserInfo extends React.Component {
 const userInfo1 = <UserInfo />
 
 console.log(
-  'Consumer userInfo1 is',
-  userInfo1,
+  // 'Consumer userInfo1 is',
+  // userInfo1,
   // $$typeof: Symbol(react.element)
   // type: class UserInfo
   // key: null

@@ -14,9 +14,9 @@ const profiler1 = <Profiler />
 const profiler2 = <React.Profiler>Hi, I'm a profiler</React.Profiler>
 
 console.log(
-  'profiler1 is(normal)', 
-  profiler1,
-  '\nprofiler2 is(profiler)',
+  // 'profiler1 is(normal)', 
+  // profiler1,
+  '\nprofiler: ',
   profiler2
 );
 

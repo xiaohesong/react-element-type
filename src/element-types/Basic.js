@@ -28,12 +28,13 @@ const basic3 = <Basic3 />
 
 // 下面三个输出结果都是 Symbol(react.element)
 console.log(
-  'basic1 is', 
-  basic1, 
-  '\nbasic2 is', 
-  basic2, 
-  '\nbasic3 is', 
-  basic3)
+  'basic: ', 
+  basic1
+  // '\nbasic2 is', 
+  // basic2, 
+  // '\nbasic3 is', 
+  // basic3
+)
 
 // export {
 //   Basic
