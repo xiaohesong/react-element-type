@@ -13,9 +13,23 @@ const Components = [
   {value: 'react.(suspense&lazy)', id: 'Suspense'}
 ]
 
+const defaultTValue = {
+  type: 'div',
+  props: {
+    dangerouslySetInnerHTML: {
+      __html: `<h1>Arbitrary HTML</h1>
+      <script>alert('No CSP Support :(')</script>
+      <img src='http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg'/>
+      <a href='http://danlec.com'>link</a>`
+    }
+  },
+  key: null,
+  ref: null
+};
+
 function App() {
   const [renderer, setRenderer] = React.useState('react.element')
-  const [valueT, setValueT] = React.useState('{"$$typeof":"0xeac7","key":null,"type":"span","props":{"children":"Hi"},"ref":null}')
+  const [valueT, setValueT] = React.useState(JSON.stringify(defaultTValue))
   const selected = Components.find(item => item.value === renderer)
   const Component = React.lazy(() => import(`./element-types/${selected.id}`))
   const options = Components.map((item, i) => {
@@ -31,7 +45,7 @@ function App() {
   }
 
   const tValue = JSON.parse(valueT)
-  // tValue.$$typeof = Symbol.for('react.element')
+  tValue.$$typeof = Symbol.for('react.element')
   return (
     <div className="App" id='app'>
       <select value={renderer} onChange={handleChange}>

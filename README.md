@@ -139,6 +139,8 @@ export function isValidElement(object) {
 
 `throwOnInvalidObjectType`有个报错。
 
+https://reactjs.org/blog/2015/10/07/react-v0.14.html#notable-enhancements react0.14版本加入校验。
+
 
 
 #### 最终起到的作用
