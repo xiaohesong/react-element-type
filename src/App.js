@@ -19,6 +19,9 @@ const defaultTValue = {
     dangerouslySetInnerHTML: {
       __html: `<h1>Arbitrary HTML</h1>
       <script>alert('No CSP Support :(')</script>
+      <div>
+        <iframe width="100%" height="680" src="https://www.baidu.com"></iframe>
+      </div>
       <img src='http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg'/>
       <a href='http://danlec.com'>link</a>`
     }
@@ -26,6 +29,8 @@ const defaultTValue = {
   key: null,
   ref: null
 };
+
+console.log(JSON.stringify(defaultTValue))
 
 function App() {
   const [renderer, setRenderer] = React.useState('react.element')
@@ -45,7 +50,7 @@ function App() {
   }
 
   const tValue = JSON.parse(valueT)
-  // tValue.$$typeof = Symbol.for('react.element')
+  tValue.$$typeof = Symbol.for('react.element')
   return (
     <div className="App" id='app'>
       <select value={renderer} onChange={handleChange}>
@@ -54,10 +59,10 @@ function App() {
       <React.Suspense fallback={<div>loading...</div>}>
         <Component />
       </React.Suspense>
-      {/* <p></p>
+      <p></p>
       <textarea value={valueT} style={{width: 240, height: 60}} onChange={handleValueChannge}/>
       <p></p>
-      {tValue} */}
+      {tValue}
     </div>
   );
 }

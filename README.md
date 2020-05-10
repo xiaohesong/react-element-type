@@ -147,40 +147,6 @@ https://reactjs.org/blog/2015/10/07/react-v0.14.html#notable-enhancements react0
 
 还是为了安全考虑
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 看个例子：
 
 ```jsx
@@ -211,3 +177,8 @@ return(
 )
 ```
 
+> 打开应用之后，注入的内容便是下面这段内容
+
+```js
+{"type":"div","props":{"dangerouslySetInnerHTML":{"__html":"<h1>Arbitrary HTML</h1>\n      <script>alert('No CSP Support :(')</script>\n      <div>\n        <iframe width=\"100%\" height=\"680\" src=\"https://www.baidu.com\"></iframe>\n      </div>\n      <img src='http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg'/>\n      <a href='http://danlec.com'>link</a>"}},"key":null,"ref":null}
+```
